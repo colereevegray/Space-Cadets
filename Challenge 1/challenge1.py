@@ -97,11 +97,11 @@ class personalPage(Page):
             csv_writer.writerows(emailList)
 
 if __name__ == "__main__":
-    page= personalPage('https://www.southampton.ac.uk/people', 435)
+    page= personalPage('https://www.southampton.ac.uk/people', 400)
     emailList = page.iterateForEachStaff()
     print(emailList)
     page.banishToCSV("massiveList.csv")
 
-    
+
     
     
